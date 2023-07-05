@@ -3,13 +3,21 @@
 > git config --global user.name 'My name'
 > git config --global user.email 'my-email@website.com' 
 > git init
-> git clone [url] [dirname]
+> git clone [url] ?[dirname]
 > git status (--short/-s)
 > git add [path]
+> git mv [file-from] [file-to]
 > git diff (--staged)
-> git commit (-a) (-m)
+> git commit (-a) (-m) (--amend)
 > git rm (-f) (--cached) [path]
 > git log (-p) (-2) (--stat) (--pretty=oneline|short|full|fuller|format) (--graph)
+> git reset HEAD [file]
+> git checkout -- [file]
+> git remote (-v) (show) (add) (rename) (rm)
+> git fetch
+> git push (--tags)
+> git pull
+> git tag (-l) (-a) (-m)
 ```
 
 ```
