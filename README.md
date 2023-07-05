@@ -9,6 +9,7 @@
 > git diff (--staged)
 > git commit (-a) (-m)
 > git rm (-f) (--cached) [path]
+> git log (-p) (-2) (--stat) (--pretty=oneline|short|full|fuller|format) (--graph)
 ```
 
 ```
@@ -32,4 +33,25 @@ doc/*.txt
 
 # ignora todos los archivos .txt del directorio doc/
 doc/**/*.txt
+```
+
+```
+git log format options
+
+| Opción | Descripción de la salida |
+| %H     | Hash de la confirmación
+| %h     | Hash de la confirmación abreviado |
+| %T     | Hash del árbol |
+| %t     | Hash del árbol abreviado |
+| %P     | Hashes de las confirmaciones padre |
+| %p     | Hashes de las confirmaciones padre abreviados |
+| %an    | Nombre del autor |
+| %ae    | Dirección de correo del autor |
+| %ad    | Fecha de autoría (el formato respeta la opción -–date) |
+| %ar    | Fecha de autoría, relativa |
+| %cn    | Nombre del confirmador |
+| %ce    | Dirección de correo del confirmador |
+| %cd    | Fecha de confirmación |
+| %cr    | Fecha de confirmación, relativa |
+| %s     | Asunto |
 ```
