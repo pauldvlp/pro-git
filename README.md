@@ -8,6 +8,7 @@
 > git add [path]
 > git diff (--staged)
 > git commit (-a) (-m)
+> git rm (-f) (--cached) [path]
 ```
 
 ```
