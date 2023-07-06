@@ -8,10 +8,7 @@ if test -f ~/.config/git/git-prompt.sh; then
   . ~/.config/git/git-prompt.sh
 else
   PS1='\[\033]0;pauldvlp\007\]' # set window title
-  PS1="$PS1"'\[\033[32m\]'      # change to green
-  PS1="$PS1"'\[\033[35m\]'      # change to purple
   PS1="$PS1"'\w'                # current working directory
-  PS1="$PS1"'\[\033[33m\]'      # change to brownish yellow
   if test -z "$WINELOADERNOEXEC"; then
     GIT_EXEC_PATH="$(git --exec-path 2>/dev/null)"
     COMPLETION_PATH="${GIT_EXEC_PATH%/libexec/git-core}"
@@ -22,7 +19,6 @@ else
       . "$COMPLETION_PATH/git-prompt.sh"
       PS1="$PS1"'\[\033[36m\]' # change color to cyan
       PS1="$PS1"'`__git_ps1`'  # bash function
-      PS1="$PS1"'\[\033[35m\]' # change to purple
       PS1="$PS1"' > '
     fi
   fi
