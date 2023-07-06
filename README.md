@@ -5,7 +5,10 @@
 > git config --global alias.unstage 'reset HEAD'
 > git config --global alias.oneline 'log --pretty=oneline'
 > git config --global alias.st status
+> git config --global alias.s 'status -sb'
 > git config --global alias.undo 'checkout --'
+> git config --global alias.last 'log -1 HEAD --stat'
+> git config --global alias.dt 'difftool'
 > git init
 > git clone [url] ?[dirname]
 > git status (--short/-s)
@@ -66,4 +69,11 @@ git log format options
 | %cd    | Fecha de confirmación |
 | %cr    | Fecha de confirmación, relativa |
 | %s     | Asunto |
+```
+
+```
+# Use VS Code as Difftool
+
+git config --global diff.tool vscode
+git config --global difftool.vscode.cmd 'code --wait --diff $LOCAL $REMOTE'
 ```
