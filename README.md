@@ -1,7 +1,11 @@
 ```
 # Commands
 > git config --global user.name 'My name'
-> git config --global user.email 'my-email@website.com' 
+> git config --global user.email 'my-email@website.com'
+> git config --global alias.unstage 'reset HEAD'
+> git config --global alias.oneline 'log --pretty=oneline'
+> git config --global alias.st status
+> git config --global alias.undo 'checkout --'
 > git init
 > git clone [url] ?[dirname]
 > git status (--short/-s)
