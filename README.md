@@ -9,6 +9,7 @@
 > git config --global alias.undo 'checkout --'
 > git config --global alias.last 'log -1 HEAD --stat'
 > git config --global alias.dt 'difftool'
+> git config --global alias.alias '!f() { git config --global alias.$1 "$2"; }; f'
 > git init
 > git clone [url] ?[dirname]
 > git status (--short/-s)
@@ -17,7 +18,7 @@
 > git diff (--staged)
 > git commit (-a) (-m) (--amend)
 > git rm (-f) (--cached) [path]
-> git log (-p) (-2) (--stat) (--pretty=oneline|short|full|fuller|format) (--graph)
+> git log (-p) (-2) (--stat) (--pretty=oneline|short|full|fuller|format) (--graph) (--decorate)
 > git reset HEAD [file]
 > git checkout -- [file]
 > git remote (-v) (show) (add) (rename) (rm)
